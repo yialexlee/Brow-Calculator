@@ -1,5 +1,5 @@
 # Brow-Calculator
-![Alt text](sampleui.png?raw=true "Screenshot")
+![Alt text](sample.png?raw=true "Screenshot")
 # About Brow-Calculator
 Brow-Calculator is stand for Browser Calculator.Brow-Calculator is a non-online sciencetific calculator work on browser.
 # How to use
