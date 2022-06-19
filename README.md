@@ -5,4 +5,4 @@ Brow-Calculator is stand for Browser Calculator.Brow-Calculator is a non-online 
 # How to use
 Please change your browser size to fit the layout of calculator,and it will seem like a real calculator.The way to use is just same with the normal sciencetific calculator.
 # Demo
-Demo link : https://yialexlee.tech/browcal
+Demo link : https://yialexlee.com/browcal
