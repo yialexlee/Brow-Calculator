@@ -4,7 +4,7 @@
 
 # About Brow-Calculator
 
-Brow-Calculator is stand for Browser Calculator.Brow-Calculator is a non-online scientific calculator work on browser.
+Brow-Calculator stands for Browser Calculator. Brow-Calculator is a non-online scientific calculator that works on browser.
 
 # How to use
 
