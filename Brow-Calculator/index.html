@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Brow Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="assests/icon.svg">
     <style type="text/css">
         @font-face {
             font-family: roboto;
@@ -27,17 +28,15 @@
 </head>
 
 <body class="thin">
-    <center>
-        <p class="blank"> </p>
-        <div
-            style="border-style: solid;background-color:transparent;border-color:white;width:71.6%;border-radius:15px;">
+    <div class="container">
+        <div class="inner-container">
             <br>
-            <center style="color:white;"><strong>Brow-Calculator</strong></center><br>
+            <div class="head-txt">Brow Calculator</div><br>
             <form name="calc">
                 <input value="0" class="field" disabled="disabled" name="txt" type="text">
-                <p> </p>
-                <ul>
-                    <li>
+                <br><br>
+                <div class="m-section">
+                    <div class="fir-section">
                         <input onclick="sine()" type="button" class="functionBtn" name="sin" value="sin">
                         <input onclick="cos()" type="button" class="functionBtn" name="pie" value="cos" nclick="">
                         <input onclick="tan()" type="button" class="functionBtn" name="pie" value="tan" nclick="">
@@ -48,9 +47,10 @@
                             style="color:#00ff00" value="•°•°•" nclick="">
                         <input onclick="checkPie()" type="button" class="functionBtn special" name="pie" value="MODE"
                             nclick="">
-                    </li>
-                    <li>
-                    <li><input onclick="asine()" type="button" class="functionBtn" name="pie" value="sin-¹" nclick="">
+
+                        <br>
+
+                        <input onclick="asine()" type="button" class="functionBtn" name="pie" value="sin-¹" nclick="">
                         <input onclick="acos()" type="button" class="functionBtn" name="pie" value="cos-¹" nclick="">
                         <input onclick="atan()" type="button" class="functionBtn" name="pie" value="tan-¹" nclick="">
                         <input onclick="abs()" type="button" class="functionBtn" name="pie" value="(—)" nclick="">
@@ -59,8 +59,9 @@
                             nclick="">
                         <input onclick="ceil()" type="button" class="functionBtn special" name="pie" value="ceil"
                             nclick="">
-                    </li>
-                    <li>
+
+                        <br>
+
                         <input onclick="check(this.value)" type="button" class="functionBtn" name="pie" value="("
                             nclick="">
                         <input onclick="check(this.value)" type="button" class="functionBtn" name="pie" value=")"
@@ -72,8 +73,10 @@
                             nclick="">
                         <input onclick="round()" type="button" class="functionBtn special" name="pie" value="round"
                             nclick="">
-                    </li>
-                    <li><input onclick="cent()" type="button" class="functionBtn" name="pie" value="%" nclick="">
+
+                        <br>
+
+                        <input onclick="cent()" type="button" class="functionBtn" name="pie" value="%" nclick="">
                         <input onclick="xinverse() " type="button" class="functionBtn" name="pie" value="x-¹" nclick="">
                         <input onclick="checkPie()" type="button" class="functionBtn" name="pie" value="π" nclick="">
                         <input onclick="fact()" type="button" class="functionBtn" name="pie" value="!" nclick="">
@@ -83,56 +86,45 @@
                             style="background:#025" nclick="">
                         <input onclick="copy()" type="button" class="functionBtn special" name="copi" value="copy"
                             style="background-color:#009;">
-                    </li>
-                    <p class="blank"> </p>
-                    <li>
+
+                    </div>
+                    <div class="sec-section">
+                        <br>
+
                         <input class="k" onclick="check(this.value)" type="button" value="7" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="8" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="9" name="">
                         <input class="k powerkey" onclick="del()" type="button" value="DEL" name="">
                         <input onclick="clr()" type="button" class="powerkey k" value="CLS" name="">
-                    </li>
-                    <li><input class="k" onclick="check(this.value)" type="button" value="4" name="">
+                        <br>
+                        <input class="k" onclick="check(this.value)" type="button" value="4" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="5" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="6" name="">
                         <input class="k" onclick="check(this.value)" type="button" class="operator" value="*" name="">
                         <input class="k" onclick="check(this.value)" type="button" class="operator" value="/" name="">
-                    </li>
-                    <li><input class="k" onclick="check(this.value)" type="button" value="1" name="">
+                        <br>
+                        <input class="k" onclick="check(this.value)" type="button" value="1" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="2" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="3" name="">
                         <input class="k" onclick="check(this.value)" type="button" class="operator" value="+" name="">
                         <input class="k" onclick="check(this.value)" type="button" class="operator" value="-" name="">
-                    </li>
-                    <li><input class="k" onclick="check(this.value)" type="button" value="0" name="">
+                        <br>
+
+                        <input class="k" onclick="check(this.value)" type="button" value="0" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="." name="">
                         <input class="k" onclick="e()" type="button" value="E" name="">
                         <input class="k" onclick="check(this.value)" type="button" value="+" name="">
                         <input class="k" onclick="equal()" type="button" value="=">
-                    </li>
-                </ul>
-                <!--   
-<div id="pop" class="animate" >
-<div id="popcontent">
-<div id="closebtn" onclick="document.getElementById('pop').style.display='none';
-calc.txt.style.display='block';
 
-">x </div>
- <center> <form name="fixform" >
-  <input id="fixme"  oninput="fixbtn()" value=""     name="fixfield" class="field2" > 
+                        <br>
 
-  </form></center>
-  
- </div>
+                    </div>
 
-</div>
-
--->
-                <br>
+                </div>
             </form>
-    </center>
-    <script src="theme.js" type="text/javascript"></script>
-    <script src="main.js" type="text/javascript"></script>
+        </div>
+        <script src="theme.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
     </div>
 </body>
 

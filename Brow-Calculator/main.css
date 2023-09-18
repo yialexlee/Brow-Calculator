@@ -5,14 +5,23 @@ body {
   backgrund: ;
 }
 
+.container {
+  text-align: center;
+}
+
+.head-txt {
+  font-size: 40px;
+  color: #fff;
+  font-family: monospace;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
 form {
   background: rgba(0, 0, 0, 0.2);
   padding-bottom: 5%;
-}
-ul {
-  list-style-type: none;
-  padding: 0px 5px;
-  margin: 0px;
 }
 
 input {
@@ -20,17 +29,28 @@ input {
   margin: 5px 2px;
 }
 
-.functionBtn {
+.fir-section {
+  display: inline-block;
+}
+
+.sec-section {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.functionBtn,
+.k {
   border: none;
-  padding: 5px 0px;
+  padding: 20px;
   border-radius: 5px;
   background: #242424;
   color: white;
-  width: 40px;
+  width: 70px;
   font-size: 14px;
   text-align: centre;
   font-family: roboto;
 }
+
 input {
   border: none;
   padding: 15px 0px;
@@ -63,17 +83,16 @@ input:active {
 }
 
 .field {
-  background: rgba(208, 205, 200, 0.8);
-  width: 85.5%;
-  border: 1px solid #232424;
+  width: 60%;
   color: black;
-  font-size: 24px;
-  font-family: monospace;
-  padding: 15px 3px;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  border: none;
   height: 50px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+  padding: 20px;
+  background-color: white;
+  font-family: Verdana;
 }
+
 .field:active {
   background: rgba(208, 205, 200, 0.8);
 }
